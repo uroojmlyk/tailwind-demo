@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: purple;
+    color: palevioletred;
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:70px ;
+    
+    
+}
+
+/* Hero Section */
+.logo{
+    color: beige;
+    justify-content: center;    align-items: center; display: flex;
+
+}
+
+
+#hero {
+    background-color: pink; /* light orange */
+    color: purple;
+    text-align: center;
+    padding: 120px 0;
+}
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 1s ease;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: purple;
+    transform: translateY(-20px);
+    transition: all 1s ease 0.3s;
+}
+.cta-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.cta-btn:hover {
+    background-color: palevioletred;
+}
+
+/* Sections Headings */
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Cards */
+.service-cards, .product-grid, .testimonial-cards, .pricing-cards, .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card, .product-card, .testimonial-card, .pricing-card, .gallery-item {
+    background-color: palevioletred; color: black;font-size: 1.5rem;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    flex: 2 2 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover, .product-card:hover, .testimonial-card:hover, .pricing-card:hover, .gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px olivedrab;
+}
+
+/* Lists */
+#benefits ul {
+    list-style: disc inside;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+#benefits li {
+    background-color: #fff3e0;color: black;font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+form input, form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+form button {
+    background-color: palevioletred;
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover {
+    background-color: olivedrab;
+    color: beige;
+}
+
+/* Footer */
+footer {
+    background-color: palevioletred;justify-content: end;
+    color:black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
